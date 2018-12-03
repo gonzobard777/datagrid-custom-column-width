@@ -1,0 +1,26 @@
+<clr-main-container>
+  <clr-datagrid>
+    <clr-dg-column class="width--num"> #</clr-dg-column>
+    <clr-dg-column class="width--progress"> %</clr-dg-column>
+    <clr-dg-column class="width--trading-code">Trading code</clr-dg-column>
+    <clr-dg-column class="width--debtor">Debtor</clr-dg-column>
+    <clr-dg-column class="width--organizer">Organizer</clr-dg-column>
+    <clr-dg-column class="width--bidding">Bidding</clr-dg-column>
+    <clr-dg-column class="width--advert-type">Advert type</clr-dg-column>
+    <clr-dg-column class="width--responsible">Responsible</clr-dg-column>
+    <clr-dg-column class="width--note">Note</clr-dg-column>
+
+    <clr-dg-row *ngFor="let advert of adverts">
+      <clr-dg-cell>{{advert.num}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.progress}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.trading_code}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.debtor}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.organizer}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.bidding}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.advert_type}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.responsible}}</clr-dg-cell>
+      <clr-dg-cell>{{advert.comment}}</clr-dg-cell>
+    </clr-dg-row>
+
+  </clr-datagrid>
+</clr-main-container>
