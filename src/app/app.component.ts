@@ -8,8 +8,6 @@ import {ClrDatagrid} from '@clr/angular';
 })
 export class AppComponent {
 
-  @ViewChild(ClrDatagrid) datagrid;
-
   adverts: {
     num: number;
     progress: string;
