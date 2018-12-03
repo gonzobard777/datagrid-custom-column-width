@@ -62,8 +62,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "datagrid-custom-column-width:build",
-            "port": 4243
+            "browserTarget": "datagrid-custom-column-width:build"
           },
           "configurations": {
             "production": {
