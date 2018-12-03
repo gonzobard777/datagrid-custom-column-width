@@ -42,11 +42,4 @@ export class AppComponent {
       responsible: 'Author2',
       comment: 'just comment'
     }];
-
-  constructor() {
-    setTimeout(() => {
-      this.datagrid.resize();
-      console.log('resizee');
-    }, 5000);
-  }
 }
